@@ -1,29 +1,43 @@
 <html>
-
-<head>
-    <link rel="stylesheet" href="tic.css">
-</head>
-
-<body>
-    <div class="back">
-    <script src="tictactoe.js"></script>
-    <div class="center">
-        <img src="\tic.png" width="200px" height="100px" class="img">
-    </div>
-    <div class="left">
-        <div class="grid">
-            <input type="button" id="b1" onclick="b1();common();">
-            <input type="button" id="b2" onclick="b2();common();">
-            <input type="button" id="b3" onclick="b3();common();">
-            <input type="button" id="b4" onclick="b4();common();">
-            <input type="button" id="b5" onclick="b5();common();">
-            <input type="button" id="b6" onclick="b6();common();">
-            <input type="button" id="b7" onclick="b7();common();">
-            <input type="button" id="b8" onclick="b8();common();">
-            <input type="button" id="b9" onclick="b9();common();">
+<head>     
+<link rel="stylesheet" href="tic.css">
+</head>   
+<body> 
+    <div class="back">   
+    <script src="tictactoe.js"></script> 
+    <div class="center">  
+    <img src="\tic.png" width="200px" height="100px">  
+    </div>  
+    <div class="left">   
+        <form id="frm">       
+        <div class="grid" id="grid">   
+            <input type="button" class="btn" id="b1" onclick="btn1_row1_column1('b1');common();">
+            <input type="button" class="btn" id="b2" onclick="btn1_row1_column1('b2');common();">
+            <input type="button" class="btn" id="b3" onclick="btn1_row1_column1('b3');common();">
+            <input type="button" class="btn" id="b4" onclick="btn1_row1_column1('b4');common();">
+            <input type="button" class="btn" id="b5" onclick="btn1_row1_column1('b5');common();">
+            <input type="button" class="btn" id="b6" onclick="btn1_row1_column1('b6');common();">
+            <input type="button" class="btn" id="b7" onclick="btn1_row1_column1('b7');common();">
+            <input type="button" class="btn" id="b8" onclick="btn1_row1_column1('b8');common();">
+            <input type="button" class="btn" id="b9" onclick="btn1_row1_column1('b9');common();">
+        </div>   
+        <div class="last">  
+        <h2 id="winner"></h2>
+        <input type="button" value="Start Game" class="start-game" onclick="common();">
+        <input type="button" value="Reset" class="btn_reset" onclick="reset();">
         </div>
-    </div>
+        </form>
+        <div class="flex">  
+            <h3>select Photo:       
+                <select id="option-img" onchange="grid()">
+                    <option id="img-1" value="sapna" style="background-image:url(sapna.jpg); background-size: cover;" height="150px" width="100px">sapna</option>
+                    <option id="img-2" value="koala" style="background-image:url(koala.jpg);" height="150px" width="200px">koala</option>
+                    <option id="img-3" value="flower" style="background-image:url(flower.jpg);" height="150px" width="200px">flower</option>
+                    <option id="img-4" value="Penguins" style="background-image:url(Penguins.jpg);" height="150px" width="200px">Penguins</option>
+                    <option id="img-5" value="white-flower" style="background-image:url(white-flower.jpg);" height="150px" width="200px">white-flower</option>
+                </select> 
+        </div>   
+       </div>   
 </div>
 </body>
-
 </html>
