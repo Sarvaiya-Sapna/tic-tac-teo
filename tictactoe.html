@@ -1,43 +1,57 @@
 <html>
-<head>     
-<link rel="stylesheet" href="tic.css">
-</head>   
-<body> 
-    <div class="back">   
-    <script src="tictactoe.js"></script> 
-    <div class="center">  
-    <img src="\tic.png" width="200px" height="100px">  
-    </div>  
-    <div class="left">   
-        <form id="frm">       
-        <div class="grid" id="grid">   
-            <input type="button" class="btn" id="b1" onclick="btn1_row1_column1('b1');common();">
-            <input type="button" class="btn" id="b2" onclick="btn1_row1_column1('b2');common();">
-            <input type="button" class="btn" id="b3" onclick="btn1_row1_column1('b3');common();">
-            <input type="button" class="btn" id="b4" onclick="btn1_row1_column1('b4');common();">
-            <input type="button" class="btn" id="b5" onclick="btn1_row1_column1('b5');common();">
-            <input type="button" class="btn" id="b6" onclick="btn1_row1_column1('b6');common();">
-            <input type="button" class="btn" id="b7" onclick="btn1_row1_column1('b7');common();">
-            <input type="button" class="btn" id="b8" onclick="btn1_row1_column1('b8');common();">
-            <input type="button" class="btn" id="b9" onclick="btn1_row1_column1('b9');common();">
-        </div>   
-        <div class="last">  
-        <h2 id="winner"></h2>
-        <input type="button" value="Start Game" class="start-game" onclick="common();">
-        <input type="button" value="Reset" class="btn_reset" onclick="reset();">
+<head>
+    <link rel="stylesheet" href="tic.css">
+</head>
+<body>
+ <div class="back">
+        <script src="tictactoe.js"></script>
+        <div class="center">
+            <img src="\tic.png" width="200px" height="100px" class="img-tic">
         </div>
-        </form>
-        <div class="flex">  
-            <h3>select Photo:       
-                <select id="option-img" onchange="grid()">
-                    <option id="img-1" value="sapna" style="background-image:url(sapna.jpg); background-size: cover;" height="150px" width="100px">sapna</option>
-                    <option id="img-2" value="koala" style="background-image:url(koala.jpg);" height="150px" width="200px">koala</option>
-                    <option id="img-3" value="flower" style="background-image:url(flower.jpg);" height="150px" width="200px">flower</option>
-                    <option id="img-4" value="Penguins" style="background-image:url(Penguins.jpg);" height="150px" width="200px">Penguins</option>
-                    <option id="img-5" value="white-flower" style="background-image:url(white-flower.jpg);" height="150px" width="200px">white-flower</option>
-                </select> 
-        </div>   
-       </div>   
-</div>
+        <h3 class="player">select Photo:
+            <select id="option-img" onchange="grid()">
+                <option id="img-1" value="sapna"
+                    style="background-image:url(sapna.jpg); background-size: cover;" height="150px"
+                    width="100px">sapna</option> 
+                <option id="img-2" value="koala" style="background-image:url(koala.jpg);" height="150px"
+                    width="200px">koala</option>
+                <option id="img-3" value="flower" style="background-image:url(flower.jpg);" height="150px"
+                    width="200px">flower</option>
+                <option id="img-4" value="Penguins" style="background-image:url(Penguins.jpg);" height="150px"
+                    width="200px">Penguins</option>
+                <option id="img-5" value="white-flower" style="background-image:url(white-flower.jpg);"
+                    height="150px" width="200px">white-flower</option>
+            </select>
+        <div class="left">  
+                       <img class="gif" src="https://inprogrammer.com/wp-content/uploads/2022/01/excited.gif" height="200px" width="200px">
+            <form id="frm">
+                <div class="grid" id="grid">
+                    <input type="text" readonly class="btn1" id="b1" onclick="btn1_row1_column1('b1');common();">
+                    <input type="text" readonly class="btn1" id="b2" onclick="btn1_row1_column1('b2');common();">
+                    <input type="text" readonly class="btn1" id="b3" onclick="btn1_row1_column1('b3');common();">
+                    <input type="text" readonly class="btn1" id="b4" onclick="btn1_row1_column1('b4');common();">
+                    <input type="text" readonly class="btn1" id="b5" onclick="btn1_row1_column1('b5');common();">
+                    <input type="text" readonly class="btn1" id="b6" onclick="btn1_row1_column1('b6');common();">
+                    <input type="text" readonly class="btn1" id="b7" onclick="btn1_row1_column1('b7');common();">
+                    <input type="text" readonly class="btn1" id="b8" onclick="btn1_row1_column1('b8');common();">
+                    <input type="text" readonly class="btn1" id="b9" onclick="btn1_row1_column1('b9');common();">
+                </div>
+                <div class="last">
+                    <h2 id="winner"></h2>
+                   <button type="reset" class="btn_reset" onclick="reset()">
+                        Reset
+                    </button>
+                </div>
+            </form>
+            <!-- <img  class="doremon" src="https://media1.tenor.com/images/ee931d954567920677cdf88a4f842219/tenor.gif?itemid=17499460" height="100px" width="200px"> -->
+            <div class="flex">
+                
+                    <div id="gif"></div>
+                    <div id="gif2"></div>
+            </div>
+               
+        </div>
+    </div>
 </body>
+
 </html>
