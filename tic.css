@@ -13,15 +13,15 @@
 .player
 {
     margin-left: 100px;
-    color: white;
+    color: black;
 }
 .doremon
 {
     margin-left: 200px;
 }
 .back
-{
-    background-image: url('https://media3.giphy.com/media/T2J86H6QVTHoDnysnW/giphy.gif?cid=ecf05e47c62nw3gudod36km318y60cy7azhnlpuqwv2mmw00&rid=giphy.gif&ct=g');
+{   background-image: url('https://cdn.dribbble.com/users/142981/screenshots/1828318/meadow-background-layering-demo.gif');
+    /* background-image: url('https://media3.giphy.com/media/T2J86H6QVTHoDnysnW/giphy.gif?cid=ecf05e47c62nw3gudod36km318y60cy7azhnlpuqwv2mmw00&rid=giphy.gif&ct=g'); */
     background-size:contain;
     width: 100%;
     height: 100%;
@@ -63,7 +63,7 @@
     {   
         display: grid;
         margin-top: 30px;
-        margin-left: 100px;
+        margin-left: 300px;
         grid-template-columns:33% 33% 33%;
         grid-template-rows:33% 33% 33%;
         max-width: 300px;
