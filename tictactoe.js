@@ -3,18 +3,19 @@ function btn1_row1_column1(id) {
     var sound = new Audio('mixkit-retro-arcade-casino-notification-211.wav');
         sound.play();
     var ele = document.getElementById(id);
-    ele.classList.add("btn");  
-    if (flag == 1) {
+    ele.classList.add("btn");
+    if (flag == 1) { 
         document.getElementById(id).value = "X";
         document.getElementById(id).disabled = true;
         flag = 0;   
-    }
+    }  
     else {
         document.getElementById(id).value = "0";
+        btn4=document.getElementById(id);
+        btn4.classList.add('btn-4');
         document.getElementById(id).disabled = true;
         flag = 1; 
-    } 
-}
+    } }
 function common() {
     var b1, b2, b3, b4, b5, b6, b7, b8, b9;
     b1 = document.getElementById("b1").value;
@@ -59,7 +60,6 @@ function grid(id) {
     var i = document.getElementById(id);
     i = document.getElementById('grid').style.backgroundImage = `url(${document.querySelector("#option-img").value}.jpg`;
     i = document.getElementById('grid').style.backgroundSize = 'cover';
-    
 }
 function reset() {
     var i = document.getElementById(id);
